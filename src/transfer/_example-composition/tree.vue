@@ -35,7 +35,7 @@
     </t-transfer>
   </t-space>
 </template>
-<script setup>
+<script setup lang="jsx">
 import { ref } from 'vue';
 
 const items = ref([
@@ -104,5 +104,7 @@ const onChange = (newTargetValue) => {
   console.log('onChange', newTargetValue);
 };
 
-const renderTree = (h, { data, value, onChange }) => <t-tree data={data} value={value} onChange={onChange} checkable hover expand-all transition></t-tree>;
+const renderTree = (h, { data, value, onChange }) => (
+  <t-tree data={data} value={value} onChange={onChange} checkable hover expand-all transition></t-tree>
+);
 </script>
