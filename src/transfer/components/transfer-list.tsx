@@ -18,7 +18,6 @@ import ripple from '../../utils/ripple';
 import Search from './transfer-search';
 import { renderTNodeJSXDefault } from '../../utils/render-tnode';
 import { getKeepAnimationMixins, getClassPrefixMixins } from '../../config-provider/config-receiver';
-import props from '../props';
 
 const classPrefixMixins = getClassPrefixMixins('transfer');
 
@@ -75,7 +74,6 @@ export default mixins(keepAnimationMixins, classPrefixMixins).extend({
     checkAll: Boolean,
     t: Function,
     global: Object,
-    tree: props.tree,
     isTreeMode: {
       type: Boolean as PropType<boolean>,
       default: false,
